@@ -19,6 +19,7 @@ Enter a Pokémon’s name and view its card, including its stats, types and even
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-8A2BE2?logo=CSS&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=grey)
+![API](https://img.shields.io/badge/API-grey)
 
 ## 📚 What I learned
 
@@ -35,6 +36,11 @@ Enter a Pokémon’s name and view its card, including its stats, types and even
 - Add more stats and detailed information about Pokémon.
 - Search by Pokédex number as well as by name.
 - Improved support for Pokémon with alternate forms.
+
+## 🚀 How to run it
+
+Clone the repository and open index.html in your browser. 
+No installation or dependencies are required.
 
 ## 🔗 Live Demo
 
