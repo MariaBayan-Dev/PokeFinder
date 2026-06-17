@@ -39,7 +39,7 @@ Enter a Pokémon’s name and view its card, including its stats, types and even
 
 ## 🚀 How to run it
 
-Clone the repository and open index.html in your browser. 
+Clone the repository and open `index.html` in your browser. 
 No installation or dependencies are required.
 
 ## 🔗 Live Demo
