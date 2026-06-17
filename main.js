@@ -64,24 +64,24 @@ const  PokeApi = async (nombre) =>{
 //COLORES POKEMON
 
 const coloresTipo = {
-    electric: '#f9d94b',
-    water: '#5eb8f5',
-    fire: '#eb7b58',
-    grass:  '#3fbda4',
     bug: '#49c084',
+    dark: '#1d1d1d',
     dragon: '#f0d681',
+    electric: '#f9d94b',
     fairy: '#f087b2',
     fighting: '#494d99',
+    fire: '#eb7b58',
     flying:  '#71adad',
-    ground: '#f0bc5d',
     ghost: '#ac6fe9',
+    grass:  '#3fbda4',
+    ground: '#f0bc5d',
     ice: '#75abe0',
     normal: '#899ca8',
     poison: '#5e4ce9',
     psychic: '#ada8f5',
     rock: '#606466',
-    dark: '#1d1d1d',
-    steel: '#8D9DB7'
+    steel: '#8D9DB7',
+    water: '#5eb8f5'
 }
 
 
