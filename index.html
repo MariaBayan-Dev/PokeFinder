@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica PokeApi</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <!-----ESTRUCTURA CARD----->
+        <div>
+            <h1 class="title-project">
+                P
+                <span class="pokeball">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <circle cx="50" cy="50" r="48" fill="#fff" />
+                        <path d="M2 50h96" stroke="#000" stroke-width="6" />
+                        <path d="M50 2a48 48 0 0 1 48 48H2A48 48 0 0 1 50 2" fill="#e53935" />
+                        <circle cx="50" cy="50" r="12" fill="#fff" stroke="#000" stroke-width="6" />
+                    </svg>
+                </span>
+                keFinder
+            </h1>
+        </div>
+
+        <div class="nombre-pokemon">
+            <input type="text" id="buscar" placeholder="Escribe tu pokémon">
+            <button id="btn">Buscar</button>
+        </div>
+
+        <!--CREAR TARJETA DESDE JS-->
+        <div id="resultado"></div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <small>@2026 Hecho con
+            <span class="pokeball-footer">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+                    viewBox="0 0 134 134">
+                    <path
+                        d="m66.667 109.189-4.211-3.806q-13.6-12.421-22.5-21.267-8.895-8.85-14.044-15.611-5.15-6.76-7.2-12.222t-2.044-11.006q0-10.6 7.2-17.8t17.8-7.2q7.333 0 13.75 3.75t11.25 10.911q4.833-7.161 11.25-10.911t13.75-3.75q10.6 0 17.8 7.2t7.2 17.8q0 5.534-2.044 11-2.05 5.478-7.2 12.233T93.43 84.116q-8.844 8.844-22.556 21.267l-4.206 3.806Z"
+                        style="fill:#e5006d;fill-rule:nonzero" />
+                    <clipPath id="_clip1">
+                        <path
+                            d="m66.667 109.189-4.211-3.806q-13.6-12.421-22.5-21.267-8.895-8.85-14.044-15.611-5.15-6.76-7.2-12.222t-2.044-11.006q0-10.6 7.2-17.8t17.8-7.2q7.333 0 13.75 3.75t11.25 10.911q4.833-7.161 11.25-10.911t13.75-3.75q10.6 0 17.8 7.2t7.2 17.8q0 5.534-2.044 11-2.05 5.478-7.2 12.233T93.43 84.116q-8.844 8.844-22.556 21.267l-4.206 3.806Z"
+                            clip-rule="nonzero" />
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                        <path d="M8.961 60.52h41.99v9.15H8.961zm73.421 0h41.99v9.15h-41.99z"
+                            style="stroke:#000;stroke-width:1.67px" />
+                        <ellipse cx="66.667" cy="65.099" rx="15.715" ry="16.023"
+                            style="stroke:#000;stroke-width:1.25px" />
+                        <path
+                            d="M59.25 64.733c0-4.07 3.349-7.42 7.42-7.42s7.42 3.349 7.42 7.42-3.349 7.42-7.42 7.42-7.42-3.349-7.42-7.42"
+                            style="fill:#fff;fill-rule:nonzero;stroke:#000;stroke-width:1.25px;stroke-linecap:butt;stroke-miterlimit:2" />
+                        <path
+                            d="M50.957 60.281c1.987-7.003 8.429-11.872 15.709-11.872s13.722 4.868 15.709 11.872h41.996C122.098 30.4 97.131 6.858 66.668 6.858c-30.469 0-55.435 23.542-57.709 53.423h41.996Zm31.419 8.904c-1.987 7.003-8.429 11.872-15.709 11.872s-13.722-4.868-15.709-11.872H8.962c2.273 29.881 27.246 53.423 57.709 53.423s55.435-23.542 57.703-53.423H82.378Z"
+                            style="fill-rule:nonzero" />
+                        <clipPath id="_clip2">
+                            <path
+                                d="M50.957 60.281c1.987-7.003 8.429-11.872 15.709-11.872s13.722 4.868 15.709 11.872h41.996C122.098 30.4 97.131 6.858 66.668 6.858c-30.469 0-55.435 23.542-57.709 53.423h41.996Zm31.419 8.904c-1.987 7.003-8.429 11.872-15.709 11.872s-13.722-4.868-15.709-11.872H8.962c2.273 29.881 27.246 53.423 57.709 53.423s55.435-23.542 57.703-53.423H82.378Z"
+                                clip-rule="nonzero" />
+                        </clipPath>
+                        <g clip-path="url(#_clip2)">
+                            <path d="M-.143-6.497h130.095v71.231H-.143z" style="fill:red" />
+                            <path d="M3.319 64.733h126.632v57.875H3.319z" style="fill:#fff" />
+                        </g>
+                        <path
+                            d="M50.957 60.281c1.987-7.003 8.429-11.872 15.709-11.872s13.722 4.868 15.709 11.872h41.996C122.098 30.4 97.131 6.858 66.668 6.858c-30.469 0-55.435 23.542-57.709 53.423h41.996Zm31.419 8.904c-1.987 7.003-8.429 11.872-15.709 11.872s-13.722-4.868-15.709-11.872H8.962c2.273 29.881 27.246 53.423 57.709 53.423s55.435-23.542 57.703-53.423H82.378Z"
+                            style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:1.67px;stroke-linecap:butt;stroke-miterlimit:2" />
+                    </g>
+                </svg>
+            </span>por <a href="https://mariabayan.netlify.app/" target="_blank" rel="noopener noreferrer"> María Bayán Escobar</a></small>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script src="main.js"></script>
+</body>
+</html>
