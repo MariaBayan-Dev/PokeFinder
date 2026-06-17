@@ -1,6 +1,7 @@
 # 🎮 PokéFinder
 
-A web app for looking up information on any Pokémon using the PokéAPI. Enter a Pokémon’s name and view its card, including its stats, types and even its official sound.
+A web app for looking up information on any Pokémon using the PokéAPI. 
+Enter a Pokémon’s name and view its card, including its stats, types and even its official sound.
 
 ## 🚀 Features
 
@@ -37,8 +38,8 @@ A web app for looking up information on any Pokémon using the PokéAPI. Enter a
 
 ## 🔗 Live Demo
 
-👉 [PokéFinder](https://mariabayan-dev.github.io/Grimoire/)
+👉 [PokéFinder](https://mariabayan-dev.github.io/PokeFinder/)
 
 ## 📸 Preview
 
-
+<img width="582" height="827" alt="pokefinder" src="https://github.com/user-attachments/assets/c2672cde-4a05-4846-b316-8cb98e528770" />
